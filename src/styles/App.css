@@ -1,0 +1,172 @@
+/* Base Application Styles */
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  color: #fff;
+  background: #222;
+  overflow-x: hidden;
+  font-family: 'Comfortaa', cursive;
+}
+button{
+  background-color: transparent;
+  border:none;
+  cursor:pointer;
+}
+.index img {
+  margin: 40px auto;
+  border-radius: 4px;
+  background: #fff;
+  display: block;
+}
+.index .notice {
+  margin: 20px auto;
+  padding: 15px 0;
+  text-align: center;
+  border: 1px solid #000;
+  border-width: 1px 0;
+  background: #666;
+}
+.wrapper-title{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color: #16cc2b;
+}
+.wrapper-title .city-title
+{
+  text-transform:uppercase;
+
+}
+.add-til-button{
+ 
+  background:transparent;
+  cursor:pointer;
+  color:white;
+  width:40px;
+  height:40px;
+  font-size: 35px;
+  margin-left: 10px;
+  border:1px solid white;
+  border-radius:50px;
+  transition: 0.4s;
+}
+.add-til-button:hover{
+  color:red;
+}
+.add-til-button.disabled{
+  color:#6C6B70;
+  border-color:#6C6B70;
+  cursor:auto;
+}
+.weatherQuery form{
+  background-color: white;
+}
+.weatherQuery input{
+  border:none;
+  width:100%;
+  text-align: center;
+  height:50px;
+}
+
+.wrapper-weather{
+  padding-top: 15px;
+   background-color: #CC164C;
+   margin-bottom: 10px;
+}
+.weather-results p{
+  text-align: center;
+  margin: 20px 0;
+}
+.weather-results ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.weather-results ul .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weather-results ul .temp{
+  margin-left:5px;
+}
+.weather-results ul li{
+  margin:5px 0;
+}
+.til{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  margin:10px;
+  border-radius: 10px;
+}
+.remove-button{
+  position: absolute;
+  right:1%;
+  top:0;
+  font-weight: bold;
+  transition: 0.4s;
+  font-size: 30px;
+  width: 25px;
+  height: 25px;
+  transform: rotate(45deg);
+}
+.remove-button:hover{
+  color:red;
+  transform: rotate(45deg) scale(1.4);
+}
+.display-button{
+  width:100%;
+  padding:15px 0;
+  border-radius:10px;
+  transition: 0.4s;
+}
+.display-button:hover{
+  background-color: #16cc2b;
+}
+.circles{
+  margin: 20px 0;
+  display:flex;
+  justify-content: center;
+}
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #CC164C;
+  margin: 0 5px;
+}
+
+@keyframes up {
+  0% {
+    transform: translate(0, 5px);
+  }
+  50% {
+    transform: translate(0, -5px);
+  }
+  100% {
+    transform: translate(0, 5px);
+  }
+}
+
+.circle:nth-child(1) {
+  animation: up 1s -0.25s infinite ease-in-out;
+}
+.circle:nth-child(2) {
+  animation: up 1s -0.5s infinite ease-in-out;
+}
+.circle:nth-child(3) {
+  animation: up 1s -0.75s infinite ease-in-out;
+}
+footer{
+  position: relative;
+bottom: 0;
+width: 100%;
+padding: 10px 0;
+}
