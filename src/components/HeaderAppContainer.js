@@ -45,7 +45,7 @@ weatherdate(d)
   let monthIndex = date.getMonth();
   if(day > daysInMonth)
   {
-  	if(d != 0 || d != 1){
+  	if(d != 0){
   		day = --d;
   		monthIndex++;
   	}
@@ -61,7 +61,7 @@ weatherdate(d)
 _getWeather = (city) => {
 
 	const key = 'c495a1dfed0261b2d4d4404ee7215a84';
-	const fet_url = 'http://api.openweathermap.org/data/2.5/forecast?q='+ city +  '&cnt=5&lang=pl&appid=' + key;
+	const fet_url = 'https://api.openweathermap.org/data/2.5/forecast?q='+ city +  '&cnt=5&lang=pl&appid=' + key;
 
  	this.setState({
         infoStatus: 'Loading'
@@ -97,7 +97,7 @@ _getWeather = (city) => {
 			weather.temps[i] = data.list[i].main.temp.toPrecision(3) - 273;
 			weather.air[i] = data.list[i].main.pressure.toPrecision(4);
 			weather.humidity[i] = data.list[i].main.humidity;
-			weather.weather_icon[i] = 'http://openweathermap.org/img/w/' + data.list[i].weather[0].icon + '.png';
+			weather.weather_icon[i] = 'https://openweathermap.org/img/w/' + data.list[i].weather[0].icon + '.png';
 			weather.wind[i] = data.list[i].wind.speed;
 			weather.time[i] = data.list[i].dt;
 			weather.date[i] = this.weatherdate(i); 

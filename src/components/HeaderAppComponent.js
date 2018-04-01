@@ -38,15 +38,14 @@ const HeaderAppComponent = (props) => {
   return (
   	<div className = "headerApp">
 	    <div className="grid-noGutter">
-	    	<div className="col-12_sm-12">
+	    	<div className="col-12">
 	    		<div className = "wrapper-title">
 	      			<h1 className='city-title'>{props.weather.city}</h1>
 	      			{button}
-
 	      		</div>
 	      	</div>
 	     </div>
-	      <div className = "grid-5-center_sm-2_xs-1 wrapper-weather">
+	      <div className = "grid-5-center_md-2_xs-1 wrapper-weather">
 	      		{innerList}
 	      </div>
 	</div>
