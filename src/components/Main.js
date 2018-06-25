@@ -15,7 +15,6 @@ class AppComponent extends React.Component {
     return (
     <div className="main">
     	<HeaderAppContainer />
-    	test
     </div>
     );
   }
