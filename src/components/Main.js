@@ -6,7 +6,7 @@ require('styles/App.css');
 import React from 'react';
 import HeaderAppContainer  from './HeaderAppContainer';
 
-//tex
+//te
 
 class AppComponent extends React.Component {
 
